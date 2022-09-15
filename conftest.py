@@ -42,7 +42,7 @@ from pages.interactions.dragabble_page import DragabbleTab
 @pytest.fixture()
 def chromedriver():
     options = Options()
-#    options.add_argument('--headless')
+    options.add_argument('--headless')
     options.add_argument('--start-maximized')
     download_folder_path = {'download.default_directory': 'C:/Users/sapko/Desktop/Project/Framework/QAtools/downloads'}
 #    path_to_adblock = "C:\\Users\\"

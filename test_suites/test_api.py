@@ -1,4 +1,4 @@
-from QAtools.services.api_service import ApiService
+from services.api_service import ApiService
 import allure
 
 

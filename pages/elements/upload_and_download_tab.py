@@ -1,6 +1,6 @@
 import time
 
-from QAtools.pages.base_page import BasePage
+from pages.base_page import BasePage
 import os.path
 
 
