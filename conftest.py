@@ -44,7 +44,9 @@ def chromedriver():
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--start-maximized')
-    download_folder_path = {'download.default_directory': 'C:/Users/sapko/Desktop/Project/Framework/QAtools/downloads'}
+    download_folder_path = {'download.default_directory':
+                                'C:\\Users\\sapko\\Desktop\\Project\\PythonUIfwk\\'
+                                'Python-UI-Api-test\\files_for_tests\\avatar.jpg'}
 #    path_to_adblock = "C:\\Users\\"
 #    options.add_argument('load-extension=' + path_to_adblock)
     options.add_experimental_option("prefs", download_folder_path)
