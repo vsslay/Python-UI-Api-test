@@ -35,9 +35,7 @@ from pages.interactions.resizable_page import ResizableTab
 from pages.interactions.droppable_page import DroppableTab
 from pages.interactions.dragabble_page import DragabbleTab
 
-
 # chromedriver setups
-
 
 @pytest.fixture()
 def chromedriver():
