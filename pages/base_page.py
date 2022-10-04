@@ -12,6 +12,7 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
 
+    # noinspection PyMethodMayBeStatic
     def _define_locator_type(self, locator):
         if "//" in locator:
             return By.XPATH
@@ -19,7 +20,8 @@ class BasePage:
     def url_open(self, url):
         self.driver.get(url)
 
-    def check_response_code(self, url, expected_code):
+    @staticmethod
+    def check_response_code(url, expected_code):
         url_to_open = requests.get(url)
         current_code = url_to_open.status_code
         if current_code == expected_code:
